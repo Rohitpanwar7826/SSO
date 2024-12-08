@@ -1,0 +1,51 @@
+<section class="pt-16 pb-32">
+  <div class="container">
+    <div class="mw-md mx-auto text-center">
+      <a class="d-inline-block mb-32" href="#">
+        <img src="flaro-assets/logos/flaro-logo-black-xl.svg" alt="SVG">
+      </a>
+      <h3 class="mb-4">Welcome Back</h3>
+      <div class="text-center mt-4">
+      <p class="fw-bold">
+        <span style="color: #ff5733;">SSO</span>
+        <span style="color: #33c1ff;">CREATED</span>
+        <span style="color: #28a745;">AND</span>
+        <span style="color: #ff33a1;">DEVELOPED</span>
+        <span style="color: #ffc107;">BY</span>
+        <span style="color: #007bff;">ROHIT</span>
+        <span style="color: #6f42c1;">SINGH</span>
+        <span style="color: #fd7e14;">PANWAR</span>
+      </p>
+    </div>      
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "needs-validation", novalidate: true }) do |f| %>
+        <div class="mb-5">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email address", class: "form-control", required: true %>
+          <div class="invalid-feedback">
+            Please enter your email.
+          </div>
+        </div>
+        
+        <div class="mb-5 position-relative">
+          <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-control", required: true %>
+          <div class="invalid-feedback">
+            Please enter your password.
+          </div>
+          <a class="position-absolute top-50 end-0 me-4 translate-middle-y btn p-0 btn-link fs-9 p-1" href="<%= new_password_path(resource_name) %>">Forgot Password?</a>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="mb-3 form-check text-start">
+            <%= f.check_box :remember_me, class: "form-check-input text-light" %>
+            <%= f.label :remember_me, class: "form-check-label text-light" %>
+          </div>
+        <% end %>
+
+        <div class="d-grid">
+          <%= f.submit "Sign In", class: "btn w-100 mb-8 btn-primary shadow" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<%= render "sso_users/shared/links" %>

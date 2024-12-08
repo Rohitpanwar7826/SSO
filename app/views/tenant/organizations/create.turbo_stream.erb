@@ -1,0 +1,8 @@
+<%= turbo_stream.prepend "organizations", partial: "organization", locals: {org: @org} %>
+
+<%= turbo_stream.after "organizations" do %>
+  <script>
+    var closePopup = document.getElementById("close-popup");
+    closePopup.click()
+  </script>
+<% end %>

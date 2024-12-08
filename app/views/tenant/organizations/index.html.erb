@@ -1,0 +1,19 @@
+ <div class="container mt-5">
+    <h1 class="text-center mb-4">Organizations</h1>
+    <hr class="p-2" style="border-top: 5px solid blue;">
+
+    <div class="text-center mb-4">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#org">
+        Create New Organization
+      </button>
+    </div>
+    <div class="row">
+      <%= turbo_frame_tag "organizations", class: "row" do %>
+        <% @orgs.each do |org| %>
+          <%= render "organization", org: org %>
+        <%end%>
+      <%end%>
+    </div>
+  </div>
+
+  <%= render 'tenant/modals/basic_modal', model_id: "org", heading: "New Organization", builder: @create_org_hash, submit_btn_text: "Create Organization" %>

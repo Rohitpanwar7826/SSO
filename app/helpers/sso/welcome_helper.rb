@@ -1,0 +1,2 @@
+module Sso::WelcomeHelper
+end

@@ -1,0 +1,8 @@
+defaults: &defaults
+  sidekiq:
+    host: <%= Rails.application.credentials.REDIS_SERVER_HOST || "localhost" %>
+    port: <%= Rails.application.credentials.REDIS_SERVER_PORT || 6379 %>
+    password: <%= Rails.application.credentials.REDIS_AUTH_TOKEN || nil %>
+    db: 3
+    reconnect_attempts: 3
+  

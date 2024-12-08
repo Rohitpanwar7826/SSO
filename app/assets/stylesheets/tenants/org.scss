@@ -1,0 +1,23 @@
+.organization-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.organization-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.card-title {
+  color: #4e73df; /* Primary color for the title */
+}
+.card-body {
+  background-color: #f8f9fc;
+  padding: 20px;  
+}
+.card-footer {
+  background-color: #f1f3f5;
+  text-align: right;
+  border-top: none;
+}
+.card-text {
+  margin-bottom: 10px;
+}
