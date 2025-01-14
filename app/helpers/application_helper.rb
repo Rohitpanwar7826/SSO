@@ -14,6 +14,8 @@ module ApplicationHelper
         html_content += form.text_field field.to_sym, class: 'form-control', value: ""
       when :text
         html_content += form.text_area field.to_sym, class: 'form-control', value: ""
+      when :password
+        html_content += form.password_field field.to_sym, class: 'form-control', value: ""
       else
         raise "Invalid type #{type}"
       end

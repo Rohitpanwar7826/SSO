@@ -1,0 +1,181 @@
+<section class="py-12 py-lg-24 bg-black position-relative overflow-hidden">
+  <div class="container py-2">
+    <div class="mw-5xl mx-auto mb-20 text-center">
+      <h2 class="font-heading p-2">Users</h2>
+    </div>
+    <div class="text-center mb-4">
+      <%= link_to "New User", new_user_path, type: "button", class: "btn btn-primary", data: { turbo_frame: "model-popup", turbo_cache: false }%>
+    </div>
+    <div class="">
+      <table class="table table-dark table-borderless">
+        <thead class="p-2">
+          <tr>
+            <th class="my-2 bg-transparent border-bottom border-dark" scope="col">
+              <div class="pb-1">
+                <span class="fw-medium fs-9 text-secondary-light">User Full name</span>
+              </div>
+            </th>
+            <th class="my-2 bg-transparent border-bottom border-dark" scope="col">
+              <div class="pb-1">
+                <span class="fw-medium fs-9 text-secondary-light">Organization</span>
+              </div>
+            </th>
+            <th class="my-2 bg-transparent border-bottom border-dark" scope="col">
+              <div class="pb-1">
+                <span class="fw-medium fs-9 text-secondary-light">Roles</span>
+              </div>
+            </th>
+            <th class="my-2 bg-transparent border-bottom border-dark" scope="col">
+              <div class="pb-1">
+                <span class="fw-medium fs-9 text-secondary-light">Rights</span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Product Manager, Instagram Camera</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Marketing</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Research Director</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Customer Success</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Miami</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Customer Success Manager</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Marketing</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">San Francisco</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Engineering Manager</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Software Engineering</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Freelance</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Boston</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Product Designer</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Design</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Los Angeles</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Product Manager, Instagram Camera</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Design</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">San Antonio</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="p-0 bg-transparent border-bottom border-dark" scope="row">
+              <div class="px-6 py-6">
+                <span class="fs-5 fw-normal">Product Manager, Instagram Camera</span>
+              </div>
+            </th>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-5"><a class="btn btn-sm py-2 lh-sm btn-outline-primary" href="#">Design</a></div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Full Time</span>
+              </div>
+            </td>
+            <td class="p-0 bg-transparent border-bottom border-dark">
+              <div class="px-6 py-6">
+                <span class="d-inline-block fw-normal">Los Angeles</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center"><a class="btn btn-primary w-100 mw-xs fw-medium" href="#">See all positions</a></div>
+  </div>
+</section>
